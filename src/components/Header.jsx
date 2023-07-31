@@ -8,6 +8,9 @@ export default function Header({ onMoveToElement, onMoveToResumeElement, onMoveT
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
   };
+  const onMoveTop = () => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", updateScroll);
@@ -25,10 +28,11 @@ export default function Header({ onMoveToElement, onMoveToResumeElement, onMoveT
             boxShadow: scrollPosition > 140 && "1px 9px 6px -7px rgba(0,0,0,0.1)",
           }}
         >
-          <Name>
+          <Name onClick={onMoveTop}>
             Front-end <br />
             <Job>Developer</Job>
           </Name>
+
           <IndexLine>
             <Index onClick={onMoveToElement}>About me</Index>
             <Index onClick={onMoveToResumeElement}>Resume</Index>
@@ -65,6 +69,12 @@ const Nav = styled.div`
 const Name = styled.div`
   font-size: 35px;
   opacity: 0.7;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+    scale: 1.1;
+    transition-duration: 0.5s;
+  }
 `;
 
 const Job = styled.div`
