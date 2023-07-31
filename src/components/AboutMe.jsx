@@ -7,8 +7,11 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { LuNewspaper } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import BeforeDevelop from "./BeforeDevelop";
+import { useState } from "react";
 
 export default function AboutMe() {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <ProfileWrapper>
@@ -44,22 +47,23 @@ export default function AboutMe() {
           </Profile>
           <Profile>
             <BsGithub />
-            <NameWrap>
-              <Name>Github</Name>
+            <NameWrap style={{ cursor: "pointer" }}>
               <Link to="https://github.com/jinhyeon0810" target="_blank">
-                <NameContent style={{ cursor: "pointer" }}> 바로가기</NameContent>
+                <Name>Github</Name>
+                <NameContent> 바로가기</NameContent>
               </Link>
             </NameWrap>
           </Profile>
           <Profile>
             <LuNewspaper />
-            <NameWrap>
+            <NameWrap style={{ cursor: "pointer" }} onClick={() => setOpen(!open)}>
               <Name>비전공자</Name>
               <NameContent>개발공부 이전 이력들</NameContent>
             </NameWrap>
           </Profile>
         </ProfileWrap>
       </ProfileWrapper>
+      {open && <BeforeDevelop />}
     </>
   );
 }
