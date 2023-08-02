@@ -42,7 +42,7 @@ export default function AboutMe() {
             <AiOutlineMail />
             <NameWrap>
               <Name>이메일</Name>
-              <NameContent>jinhyeon0810@gmail.com</NameContent>
+              <NameContent>5drop@naver.com</NameContent>
             </NameWrap>
           </Profile>
           <Profile>

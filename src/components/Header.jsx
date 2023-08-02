@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // eslint-disable-next-line react/prop-types
-export default function Header({ onMoveToElement, onMoveToResumeElement, onMoveToProjectElement }) {
+export default function Header({ onMoveToElement, onMoveToResumeElement, onMoveToProjectElement, onMoveToStudyElement }) {
   const [scrollPosition, setScrollPosition] = useState(0);
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -22,10 +22,10 @@ export default function Header({ onMoveToElement, onMoveToResumeElement, onMoveT
       <Wrapper>
         <Nav
           style={{
-            backgroundColor: scrollPosition > 140 && "black",
-            color: scrollPosition > 140 && "white",
-            opacity: scrollPosition > 140 && "0.95",
-            boxShadow: scrollPosition > 140 && "1px 9px 6px -7px rgba(0,0,0,0.1)",
+            backgroundColor: scrollPosition > 80 && "black",
+            color: scrollPosition > 80 && "white",
+            opacity: scrollPosition > 80 && "0.95",
+            boxShadow: scrollPosition > 80 && "1px 9px 6px -7px rgba(0,0,0,0.1)",
           }}
         >
           <Name onClick={onMoveTop}>
@@ -37,11 +37,9 @@ export default function Header({ onMoveToElement, onMoveToResumeElement, onMoveT
             <Index onClick={onMoveToElement}>About me</Index>
             <Index onClick={onMoveToResumeElement}>Resume</Index>
             <Index onClick={onMoveToProjectElement}>Projects</Index>
+            <Index onClick={onMoveToStudyElement}>Study</Index>
             <Link to="https://blog.naver.com/growingdeveloper" target="_blank">
               <Index>Blog</Index>
-            </Link>
-            <Link to="https://www.notion.so/8ed83c74292e450db5d7017b9ef5da2b?v=7b47b5ebdca240a7844399299c29d8b4" target="_blank">
-              <Index>Notion</Index>
             </Link>
           </IndexLine>
         </Nav>
@@ -63,11 +61,11 @@ const Nav = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 20px 10px;
+  padding: 12px 10px;
 `;
 
 const Name = styled.div`
-  font-size: 35px;
+  font-size: 28px;
   opacity: 0.7;
   cursor: pointer;
   &:hover {

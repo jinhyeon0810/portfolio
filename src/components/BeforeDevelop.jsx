@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import ImageSrc from "../../public/assets/개발이전이력1.png";
-import ImageTwoSrc from "../../public/assets/개발이전이력2.png";
+import ImageSrc from "../../src/assets/개발이전이력1.png";
+import ImageTwoSrc from "../../src/assets/개발이전이력2.png";
 
 export default function BeforeDevelop() {
   return (
