@@ -5,6 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { ImLocation } from "react-icons/im";
 import { BsTelephoneFill } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
+import { SiBloglovin } from "react-icons/si";
 import { LuNewspaper } from "react-icons/lu";
 import { Link } from "react-router-dom";
 import BeforeDevelop from "./BeforeDevelop";
@@ -50,7 +51,12 @@ export default function AboutMe() {
             <NameWrap style={{ cursor: "pointer" }}>
               <Link to="https://github.com/jinhyeon0810" target="_blank">
                 <Name>Github</Name>
-                <NameContent> 바로가기</NameContent>
+              </Link>
+            </NameWrap>
+            <SiBloglovin style={{ marginLeft: "20px", fontSize: "19px" }} />
+            <NameWrap style={{ cursor: "pointer", marginLeft: "8px" }}>
+              <Link to="https://blog.naver.com/growingdeveloper" target="_blank">
+                <Name>Blog</Name>
               </Link>
             </NameWrap>
           </Profile>
