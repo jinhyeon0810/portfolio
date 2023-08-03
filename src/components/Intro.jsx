@@ -36,11 +36,17 @@ const Introduce = styled.div`
   font-size: 40px;
   margin-bottom: 50px;
   color: white;
+  @media (max-width: 730px) {
+    font-size: 30px;
+  }
 `;
 
 const IntroContent = styled.div`
   color: white;
   font-size: 20px;
+  @media (max-width: 730px) {
+    font-size: 14px;
+  }
 `;
 
 const IntroContents = styled.div`

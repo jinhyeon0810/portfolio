@@ -85,6 +85,9 @@ const ProfileTitle = styled.div`
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
+  @media (max-width: 730px) {
+    font-size: 30px;
+  }
 `;
 
 const ProfileWrap = styled.div`
@@ -93,8 +96,14 @@ const ProfileWrap = styled.div`
   gap: 30px;
   width: 70%;
   margin: 0 auto;
-  @media (max-width: 768px) {
-    gap: 10px;
+  @media (max-width: 730px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 10px;
+    width: 100%;
+  }
+  @media (min-width: 730px) and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 10px;
     width: 100%;
   }
 `;
@@ -110,12 +119,12 @@ const Name = styled.div`
   font-size: 20px;
   margin-bottom: 10px;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 13px;
   }
 `;
 const NameContent = styled.div`
   font-size: 16px;
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 10px;
   }
 `;

@@ -90,6 +90,9 @@ const Index = styled.div`
     transition-duration: 0.5s;
     scale: 1.1;
   }
+  @media (max-width: 730px) {
+    display: none;
+  }
 `;
 
 const IndexLine = styled.div`
