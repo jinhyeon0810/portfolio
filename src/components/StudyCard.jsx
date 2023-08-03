@@ -105,6 +105,11 @@ const StudyArea = styled.div`
   &:hover::before {
     background-color: rgba(0, 0, 0, 0.5);
   }
+
+  // @media (max-width: 768px) {
+  //   width: 120px;
+  //   height: 80px;
+  // }
 `;
 
 const StudyImage = styled.img`

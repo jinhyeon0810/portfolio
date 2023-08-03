@@ -93,6 +93,10 @@ const ProfileWrap = styled.div`
   gap: 30px;
   width: 70%;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    gap: 10px;
+    width: 100%;
+  }
 `;
 
 const Profile = styled.div`
@@ -105,7 +109,13 @@ const NameWrap = styled.div`
 const Name = styled.div`
   font-size: 20px;
   margin-bottom: 10px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 const NameContent = styled.div`
   font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;

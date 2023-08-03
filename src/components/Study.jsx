@@ -101,4 +101,14 @@ const GridTemplate = styled.div`
   gap: 10px 10px;
   margin: 20px auto 0;
   width: 980px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 5px;
+    width: 300px;
+  }
+  @media (max-width: 674px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px 5px;
+    width: 300px;
+  }
 `;
