@@ -6,6 +6,8 @@ import ThirdStudyImageSrc from "../../src/assets/thumnails/mbtireact.png";
 import FourthStudyImageSrc from "../../src/assets/thumnails/coupang-NavFooter.png";
 import CoupangCategoryImageSrc from "../../src/assets/thumnails/coupang-category.png";
 import TodoListImageSrc from "../../src/assets/thumnails/todolist.png";
+import StarRateImageSrc from "../../src/assets/thumnails/starRateThumnail.png";
+import DatePickerImageSrc from "../../src/assets/thumnails/datepickerThumnail.png";
 
 // eslint-disable-next-line react/prop-types
 export default function Projects({ studyElement }) {
@@ -36,6 +38,24 @@ export default function Projects({ studyElement }) {
       work: "HTML, CSS",
       code: "https://github.com/jinhyeon0810/FirstTimeGit/tree/master/%EC%A0%9C%EB%A1%9C%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B3%BC%EC%A0%9C/Mission-05/Mission-05",
       web: "https://coupang-navfooter.vercel.app/",
+    },
+    {
+      src: StarRateImageSrc,
+      text: "JavaScript-StarRate",
+      name: "Star-rate",
+      desc: "자바스크립트로 구현한 Star-rate입니다.",
+      work: "HTML, CSS, JavaScript",
+      code: "https://github.com/jinhyeon0810/JavaScript-Study/tree/main/template3",
+      web: "https://javascript-study-star-rate.vercel.app/",
+    },
+    {
+      src: DatePickerImageSrc,
+      text: "JavaScript-DatePicker",
+      name: "DatePicker",
+      desc: "자바스크립트로 구현한 DatePicker입니다.",
+      work: "HTML, CSS, JavaScript",
+      code: "https://github.com/jinhyeon0810/JavaScript-Study/tree/main/template4",
+      web: "https://javascript-study-datepicker.vercel.app/",
     },
     {
       src: TodoListImageSrc,
